@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #07070d; }
+  a { color: inherit; text-decoration: none; }
+</style>
+</helmet>
+<div style="width:428px; max-width:100%; margin:0 auto; background:#07070d; color:#fff; font-family:'Helvetica Neue',Helvetica,Arial,'Noto Sans JP',sans-serif; overflow:hidden; padding-bottom:0;">
+
+  <!-- Section header -->
+  <div style="text-align:center; padding:44px 20px 30px;" data-reveal>
+    <div style="font-size:13px; font-weight:600; letter-spacing:2px; color:#8f86ff;">ALL-IN-ONE EXCELLENCE</div>
+    <div style="font-size:36px; font-weight:800; line-height:1.05; margin-top:8px; white-space:nowrap;">すべてが高品質な機能</div>
+    <p style="font-size:14px; line-height:22px; color:#b6b6c2; margin-top:14px; text-wrap:pretty;">WORXHUBは、会議の質を高めるために<br>細部までこだわり抜いた高品質な機能を搭載しています。</p>
+  </div>
+
+  <div style="display:flex; flex-direction:column; gap:24px; padding:0 16px;">
+
+    <!-- 01 : bleed card -->
+    <div style="position:relative; border-radius:16px; overflow:hidden; background:#0d0d14; padding:24px 20px 22px; min-height:250px;" data-reveal>
+      <img src="uploads/opt-aicamera.jpg" alt="AIカメラ" style="position:absolute; top:0; right:0; width:56%; height:auto; z-index:0;">
+      <div style="position:relative; z-index:1; max-width:200px;">
+        <div style="font-size:38px; font-weight:800; color:#8a63ff; line-height:1;">01</div>
+        <div style="font-size:22px; font-weight:700; margin-top:8px;">AI広範囲<br>カメラ搭載</div>
+        <div style="font-size:13px; line-height:20px; color:#b6b6c2; margin-top:12px;">超広角レンズとAI技術で、<br>部屋全体を鮮明に映し出します。</div>
+      </div>
+      <div style="position:relative; z-index:1; display:flex; gap:6px; margin-top:22px;">
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.wide }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4;">超広角<br>レンズ</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div>{{ icons.aiBadge }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4;">AI自動<br>最適化</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.face }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4;">人物・顔<br>自動認識</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.sun }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4;">明るさ・画角を<br>自動調整</div></div>
+      </div>
+    </div>
+
+    <!-- 02 : split image-left / text-right -->
+    <div style="padding:4px 4px;" data-reveal="left">
+      <div style="display:flex; gap:14px; align-items:center;">
+        <img src="uploads/opt-multiwindow.jpg" alt="複数ウィンドウ" style="width:46%; height:auto; border-radius:8px; flex:0 0 auto;">
+        <div style="flex:1;">
+          <div style="font-size:38px; font-weight:800; color:#8a63ff; line-height:1;">02</div>
+          <div style="font-size:20px; font-weight:700; margin-top:6px; line-height:1.25; white-space:nowrap;">複数のウィンドウを<br>同時サポート</div>
+          <div style="font-size:13px; line-height:20px; color:#b6b6c2; margin-top:10px;">複数のアプリや資料を同時に表示・操作。会議やプレゼンをより効率的に進められます。</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:6px; margin-top:18px;">
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.grid }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4; white-space:nowrap;">マルチ<br>ウィンドウ</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.split }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4; white-space:nowrap;">画面分割<br>表示</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.swap }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4; white-space:nowrap;">アプリ間の<br>スムーズな切替</div></div>
+      </div>
+    </div>
+
+    <!-- 03 : bleed card -->
+    <div style="position:relative; border-radius:16px; overflow:hidden; background:#0d0d14; padding:24px 20px 22px; min-height:250px;" data-reveal>
+      <img src="uploads/opt-smooth.jpg" alt="スムーズな体験" style="position:absolute; top:0; right:0; width:58%; height:auto; z-index:0;">
+      <div style="position:relative; z-index:1; max-width:200px;">
+        <div style="font-size:38px; font-weight:800; color:#8a63ff; line-height:1;">03</div>
+        <div style="font-size:22px; font-weight:700; margin-top:8px;">スムーズな体験</div>
+        <div style="font-size:13px; line-height:20px; color:#b6b6c2; margin-top:12px;">高精度タッチと低遅延で、自然で直感的な操作を実現。書き心地も滑らかでストレスフリー。</div>
+      </div>
+      <div style="position:relative; z-index:1; display:flex; gap:6px; margin-top:22px;">
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.pen }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4;">低遅延<br>タッチ</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.target }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4;">高精度<br>書き込み</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.bolt }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4;">高速応答で<br>サクサク操作</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.tap }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4;">なめらかな<br>書き心地</div></div>
+      </div>
+    </div>
+
+    <!-- 04 : split image-left / text-right -->
+    <div style="padding:4px 4px;" data-reveal="right">
+      <div style="display:flex; gap:14px; align-items:center;">
+        <img src="uploads/opt-aisound.jpg" alt="AI音響エンジン" style="width:46%; height:auto; border-radius:8px; flex:0 0 auto;">
+        <div style="flex:1;">
+          <div style="font-size:38px; font-weight:800; color:#8a63ff; line-height:1;">04</div>
+          <div style="font-size:22px; font-weight:700; margin-top:6px; line-height:1.25;">AI音響<br>エンジン3.0</div>
+          <div style="font-size:13px; line-height:20px; color:#b6b6c2; margin-top:10px;">AIが環境ノイズを自動で除去し、話者の声をクリアに拾います。遠くの声も、はっきりと届けます。</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:6px; margin-top:18px;">
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.wave }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4; white-space:nowrap;">AIノイズ<br>キャンセル</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.mic }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4; white-space:nowrap;">エコー<br>除去</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.focus }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4; white-space:nowrap;">話者の声を<br>自動フォーカス</div></div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:7px;"><div style="color:#9b86ff;">{{ icons.group }}</div><div style="font-size:11px; line-height:15px; color:#c9c9d4; white-space:nowrap;">最大12mの<br>集音範囲</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom band -->
+  <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:32px; padding:20px 16px 22px; border-top:1px solid #1c1c26;" data-reveal>
+    <div style="font-size:12px; line-height:18px; color:#9a9aa6; text-wrap:balance;">会議室に必要なすべてを、これ一台に。<br>WORXHUBは、あなたのビジネスを次のステージへ導きます。</div>
+    <a href="contact.html" style="flex:0 0 auto; display:inline-flex; align-items:center; gap:10px; background:linear-gradient(90deg,#6c4bd6,#7f7bef); color:#fff; font-size:14px; font-weight:700; padding:12px 18px; border-radius:24px;">資料ダウンロード
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M4 12h15m0 0l-6-6m6 6l-6 6"/></svg>
+    </a>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:428,&quot;height&quot;:1900}}">
+class Component extends DCLogic {
+  renderVals() {
+    const ic = (p, size) => React.createElement('span', { style:{display:'inline-flex'}, dangerouslySetInnerHTML: { __html: `<svg width="${size||30}" height="${size||30}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${p}</svg>` } });
+    const aiBadge = React.createElement('span', { dangerouslySetInnerHTML: { __html: `<svg width="30" height="30" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="4" fill="#8a63ff"/><text x="12" y="16" font-size="9" font-weight="700" text-anchor="middle" fill="#fff" font-family="Helvetica,Arial">AI</text></svg>` } });
+    const icons = {
+      wide: ic('<path d="M4 8V5a1 1 0 011-1h3M20 8V5a1 1 0 00-1-1h-3M4 16v3a1 1 0 001 1h3M20 16v3a1 1 0 01-1 1h-3"/><path d="M8 8l8 8M16 8l-8 8"/>'),
+      aiBadge,
+      face: ic('<path d="M4 8V5a1 1 0 011-1h3M20 8V5a1 1 0 00-1-1h-3M4 16v3a1 1 0 001 1h3M20 16v3a1 1 0 01-1 1h-3"/><circle cx="12" cy="10" r="2.2"/><path d="M8.5 16c.6-2 2-3 3.5-3s2.9 1 3.5 3"/>'),
+      sun: ic('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/>'),
+      grid: ic('<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>'),
+      split: ic('<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/>'),
+      swap: ic('<rect x="3" y="7" width="12" height="12" rx="2"/><path d="M9 7V5a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2h-2"/>'),
+      pen: ic('<path d="M4 20l3-1L20 6a2 2 0 00-3-3L4 16z"/><path d="M15 5l3 3"/>'),
+      target: ic('<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>'),
+      bolt: ic('<path d="M13 2L4 14h6l-1 8 9-12h-6z"/>'),
+      tap: ic('<path d="M9 11V6a2 2 0 014 0v5"/><path d="M13 11V8a2 2 0 014 0v6a6 6 0 01-6 6h-1a5 5 0 01-4-2l-3-4a1.6 1.6 0 012.4-2L7 15V8a2 2 0 014 0v3"/>'),
+      wave: ic('<path d="M2 12h2l2-6 3 14 3-18 3 14 2-4h2"/>'),
+      mic: ic('<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0012 0M12 17v4M9 21h6"/>'),
+      focus: ic('<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>'),
+      group: ic('<circle cx="8" cy="8" r="3"/><path d="M2 20a6 6 0 0112 0"/><circle cx="17" cy="9" r="2.5"/><path d="M15 20a5 5 0 017-4.5"/>'),
+    };
+    return { icons };
+  }
+}
+</script>
+</body>
+</html>
